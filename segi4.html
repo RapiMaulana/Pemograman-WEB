@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luas Persegi Panjang</title>
+  </head>
+  <body>
+    <p>
+      <script languange="JavaScript">
+        function segi4() {
+          var panjang = parseFloat(document.fform.panjang1.value);
+          if (isNaN(panjang)) panjang1 = 0.0;
+          var lebar = parseFloat(document.fform.lebar1.value);
+          if (isNaN(lebar)) lebar = 0.0;
+          var luas = panjang * lebar;
+          alert("Hasil Luas = " + luas);
+        }
+           function jumlah() {
+          var panjang = parseFloat(document.fform.panjang1.value);
+          if (isNaN(panjang)) panjang1 = 0.0;
+          var lebar = parseFloat(document.fform.lebar1.value);
+          if (isNaN(lebar)) lebar = 0.0;
+          var luas = panjang + lebar;
+          alert("Hasil Luas = " + luas);
+        }
+      </script>
+    </p>
+    <form name="fform">
+        <H1><BR>Memasukkan Data Lewat Keyboard</BR></H1>
+        <pre>
+            panjang:<input type="text" size="11" name="panjang1">
+            Lebar : <input type="text" size="11" name="lebar1">
+        </pre>
+        
+        <p>
+            <input type="button" value="kalikan" onclick="segi4()">
+            <input type="reset" value="Ulang">
+            <input type="button" value="jumlah" id=""onclick="jumlah()">
+        </p>
+        
+    </form>
+  </body>
+</html>
